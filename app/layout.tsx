@@ -42,13 +42,14 @@ export default function RootLayout({
         <meta name="twitter:image" content="/path-to-your-image.jpg" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ` }
       >
        <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
+            
           >
             {children}
           </ThemeProvider>
