@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
 import Image from "next/image";
 function footer() {

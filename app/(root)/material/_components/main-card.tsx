@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
-function TopMaterial() {
+function MainCard() {
   const tags = [
     { tag: "#flutter" },
     { tag: "#javascript" },
@@ -16,8 +15,8 @@ function TopMaterial() {
     { tag: "#python" },
   ];
   return (
-    <div className="w-full mt-5 ml-[32px] rounded-[24px] grid grid-cols-[488px_384px]  overflow-hidden">
-      <div className="relative w-full h-[300px]">
+    <div className="w-full mt-5  rounded-[24px] grid grid-cols-[488px_384px]  overflow-hidden">
+      <div className="relative w-full ">
         <Image
           src="/Frame (1).svg"
           alt="Top Material"
@@ -65,4 +64,4 @@ function TopMaterial() {
   );
 }
 
-export default TopMaterial;
+export default MainCard;
