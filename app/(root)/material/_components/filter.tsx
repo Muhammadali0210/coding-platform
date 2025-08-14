@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { HelpCircle, User2 } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import  { useState } from "react";
 
-function saidbarMaterial() {
+function Filter() {
   const materialMenu = [
   { name: "All Category", path: "all" },
   { name: "UI/UX Design", path: "uiux" },
@@ -50,4 +50,4 @@ const [active , setActive ] = useState(materialMenu[0].path)
   );
 }
 
-export default saidbarMaterial;
+export default Filter;
