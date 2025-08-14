@@ -39,7 +39,7 @@ const Page = () => {
               <Button className="w-full text-white mt-5" >Ro'yxatdan o'tish </Button>
 
 
-              </form>
+            </form>
               <div className="grid grid-cols-2 gap-2 mt-5">
                  <Button variant="outline"><AtSign />Gmail </Button> 
                    <Button variant="outline"><Github />GitHub</Button>
