@@ -1,16 +1,15 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Golos_Text, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
+  subsets: ["latin", "latin-ext", "cyrillic"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const golosText = Golos_Text({
+  variable: "--font-golos-text",
+  subsets: ["latin", "latin-ext", "cyrillic"],
 });
 
 
@@ -42,7 +41,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="/path-to-your-image.jpg" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ` }
+        className={`${nunitoSans.className} antialiased ` }
       >
        <ThemeProvider
             attribute="class"
