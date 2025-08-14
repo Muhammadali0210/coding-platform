@@ -3,9 +3,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
-      <ModeToggle />
+    <div className="mt-[8.3vh]">
+      asdfghjk
     </div>
   )
 }
