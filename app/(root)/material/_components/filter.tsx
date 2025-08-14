@@ -3,20 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { HelpCircle, User2 } from "lucide-react";
 import Link from "next/link";
-import  { useState } from "react";
+import { useState } from "react";
 
-function Filter() {
+const Filter = () => {
   const materialMenu = [
-  { name: "All Category", path: "all" },
-  { name: "UI/UX Design", path: "uiux" },
-  { name: "Machine Learning", path: "ml" },
-  { name: "Marketing", path: "marketing" },
-  { name: "Human Resources", path: "hr" },
-];
-const [active , setActive ] = useState(materialMenu[0].path)
+    { name: "All Category", path: "all" },
+    { name: "UI/UX Design", path: "uiux" },
+    { name: "Machine Learning", path: "ml" },
+    { name: "Marketing", path: "marketing" },
+    { name: "Human Resources", path: "hr" },
+  ];
+  const [active, setActive] = useState(materialMenu[0].path)
   return (
-
-    <div className="w-full mt-5">
+    <div className="w-[280px] h-[max-content] min-w-[280px] sticky top-[calc(8vh+24px)]">
       <div className="flex items-center border border-gray-300 rounded-2xl px-[12px] py-[8px] w-full  bg-white">
         <User2 className="w-[20px] h-[20px] text-[#CBD5E1]" />
         <Input
@@ -27,7 +26,7 @@ const [active , setActive ] = useState(materialMenu[0].path)
         <HelpCircle className="w-[20px] h-[20px] text-[#CBD5E1]" />
       </div>
 
-      
+
       {/*saidbar*/}
       <div className="mt-[40px]">
         <Link href={"/"} className="text-[#3761E9] text-[14px] mb-[16px] cursor-pointer">
@@ -38,7 +37,7 @@ const [active , setActive ] = useState(materialMenu[0].path)
             key={key}
             variant="ghost"
             value={item.path}
-            onClick={()=>setActive(item.path)}
+            onClick={() => setActive(item.path)}
             className={` flex flex-col font-bold text-[16px] border-l-[2px] rounded-none px-[13px] py-[20px] 
             ${active === item.path ? "border-[#3761E9] text-[#1E293B]" : "border-[#CBD5E1] text-[#475569]"}`}
           >

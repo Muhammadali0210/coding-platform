@@ -15,50 +15,54 @@ function MainCard() {
     { tag: "#python" },
   ];
   return (
-    <div className="w-full mt-5  rounded-[24px] grid grid-cols-[488px_384px]  overflow-hidden">
-      <div className="relative w-full ">
+    <div className="flex gap-8 overflow-hidden">
+      <div className="relative rounded-[24px] w-[488px] h-[320px] overflow-hidden">
         <Image
           src="/Frame (1).svg"
           alt="Top Material"
           fill
-          className="object-cover rounded-[24px] "
+          className="object-cover"
         />
       </div>
-      <div className="p-4">
-        <span className="text-[#3761E9] text-[14px] rounded-full bg-[#F0F2FA] px-[12px] py-[6px]">
-          Featured
-        </span>
-        <h1 className="text-[30px] text-[#1E293B] font-semibold">
+      <div className="overflow-hidden flex-1">
+        <div className="flex justify-between">
+          <div className="w-[max-content] rounded-full bg-[#e4e7f5] py-[4px] px-[8px] text-[#3761E9] text-[12px] leading-[16px] font-semibold">
+            Backend
+          </div>
+          <div className="flex items-center gap-2">
+            <Image src="/icons/like-outlined.svg" width={28} height={28} alt="like" />
+            <span className="text-[18px] text-[#343d49]">20 k</span>
+          </div>
+        </div>
+        <h1 className="mt-6 text-[30px] leading-[38px] text-[#1E293B] font-extrabold">
           How To Be Lazy Person In The Age of AI/ML
         </h1>
 
-        <div className="flex mt-[24px] gap-2 overflow-x-auto no-scrollbar">
-          {tags.map((item, index) => (
-            <Button
+        <div className="flex mt-2 gap-2 overflow-x-auto no-scrollbar w-full">
+          {[1, 2, 3, 4].map((item, index) => (
+            <div
               key={index}
-              variant="outline"
-              className=" bg-slate-200 border-none px-4 py-1 text-[18px] flex-shrink-0 text-[#475569]"
+              className="bg-slate-200 hover:bg-slate-200 border-none px-4 py-2 rounded-[8px]  text-[14px] text-[#475569] font-medium"
             >
-              {item.tag}
-            </Button>
+              #react
+            </div>
           ))}
         </div>
 
-        <div className="mt-[32px] flex items-center">
-          <Image
-            src="/Avatar.svg"
-            alt="Nav logo"
-            width={40}
-            height={40}
-            className="object-cover "
-          />
-          <div className=" ml-3 flex flex-col">
-            <Link  href={""} className="text-[14px] font-bold ">
-            Azunyan U. Wu
-          </Link>
-           <p className="text-[#94A3B8] text-[14px]">5min read</p>
+        <div className="flex justify-between items-center gap-4 mt-10">
+          <div className="flex">
+            <Image src="/Avatar.svg" width={40} height={40} alt="avatar" className="rounded-full object-cover" />
+
+            <div className="flex flex-col ml-3">
+              <h3 className="text-[14px] leading-[20px] font-bold text-[#475569]">Vermillion White</h3>
+              <span className="text-[12px] leading-[16px] text-[#475569]">2025.02.10 15:30</span>
+            </div>
           </div>
-        </div>
+
+          <Link href="/">
+            <Image src="/icons/ArrowUpRight.svg" width={24} height={24} alt={"arrow"} />
+          </Link>
+      </div>
       </div>
     </div>
   );

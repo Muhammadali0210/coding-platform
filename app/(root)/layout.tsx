@@ -6,14 +6,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
+    <div className="bg-[#F5F5F7] w-full min-h-[100vh]">
       <Navbar />
-      <div className="bg-[#F5F5F7] min-h-[90vh] ">
+      <div className="py-10 mt-[8vh]">
         {children}
-        <div className="container">
-          <Footer />
-        </div>
       </div>
+      <Footer />
     </div>
   );
 }
