@@ -13,7 +13,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="bg-white h-[8vh]  fixed top-0 left-0 right-0 z-50">
+    <div className="bg-white h-[8vh]  fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
       <div className="container flex justify-between items-center h-full ">
         <Link href={"/"}>
           <div className="flex items-center   ">
@@ -24,9 +24,7 @@ function Navbar() {
               height={200}
               className="object-cover "
             />
-            {/* <span className="text-[22px] font-bold text-[#5D5FEF]">
-             PLATFORM
-            </span> */}
+           
           </div>
         </Link>
 

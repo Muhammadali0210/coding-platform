@@ -6,7 +6,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="bg-[#F5F5F7] w-full min-h-[100vh]">
+    <div className="bg-[#FFF] w-full min-h-[100vh]">
       <Navbar />
       <div className="py-10 mt-[8vh]">
         {children}
