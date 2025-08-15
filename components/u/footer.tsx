@@ -34,7 +34,7 @@ function footer() {
   ];
 
   return (
-    <div className="container">
+    <div className="container pb-10">
       <div className="w-full bg-[#090127] rounded-[32px] p-[40px]">
         <div className="grid grid-cols-2 py-[39px] border-b border-[#4D5560]">
           <Link href={"/"}>

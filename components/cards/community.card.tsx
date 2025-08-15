@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const AnswerCard = () => {
+const CommunityCard = () => {
   return (
-    <div className="py-[32px] ">
-      <div className="flex items-center justify-between">
+    <div className="border-b border-[#E4E7F5] pb-6">
+      <div className="flex items-center justify-between gap-4">
         <div>
-          <div className="w-[max-content] rounded-full bg-[#e4e7f5] mb-[16px] py-[4px] px-[8px] text-[#3761E9] text-[12px] leading-[16px] font-semibold">
+          {/* <div className="w-[max-content] rounded-full bg-[#e4e7f5] mb-[16px] py-[4px] px-[8px] text-[#3761E9] text-[12px] leading-[16px] font-semibold">
             Backend
-          </div>
+          </div> */}
 
           <Link
             className="font-extrabold text-[20px] leading-[28px] text-[#1E293B] "
@@ -17,18 +17,20 @@ const AnswerCard = () => {
             Senior Product Designer
           </Link>
 
+          <p className="text-[16px] leading-[20px] text-[#475569] mt-2 line-clamp-2">Maecenas accumsan lacus vel facilisis. Ullamcorper sit amet risus nullam ege. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit, voluptas odit autem magni suscipit neque dolorem, iusto vero exercitationem minus unde. Voluptate voluptatibus tenetur deserunt quisquam mollitia, molestias maxime!</p>
+
           <div className="flex mt-[8px] gap-2 overflow-x-auto no-scrollbar w-full">
             {[1, 2, 3, 4].map((item, index) => (
               <div
                 key={index}
-                className="bg-slate-200 hover:bg-slate-200 border-none px-4 py-2 rounded-[8px]  text-[14px] text-[#475569] font-medium"
+                className="bg-slate-200 hover:bg-slate-200 border-none px-3 py-1 rounded-[8px]  text-[14px] text-[#475569] font-medium"
               >
                 #react
               </div>
             ))}
           </div>
         </div>
-        <Link className="flex justify-end" href="/">
+        <Link className="p-4 min-w-[64px]" href="/">
           <Image
             src="/icons/ArrowUpRight.svg"
             width={32}
@@ -38,8 +40,7 @@ const AnswerCard = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 mt-[32px]">
-        
+      <div className="grid grid-cols-2 mt-6">
           <div className="flex justify-start">
             <Image
               src="/Avatar.svg"
@@ -58,11 +59,11 @@ const AnswerCard = () => {
           <div className="flex items-center justify-end gap-2">
             <Image
               src="/icons/like-outlined.svg"
-              width={28}
-              height={28}
+              width={24}
+              height={24}
               alt="like"
             />
-            <span className="text-[18px] text-[#343d49]">20 k</span>
+            <span className="text-[16px] leading-[22px] font-bold text-[#1E293B]">20 k</span>
           </div>
         
       </div>
@@ -70,4 +71,4 @@ const AnswerCard = () => {
   );
 };
 
-export default AnswerCard;
+export default CommunityCard;

@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Coding - platform</title>
+        <title>Codemap</title>
         <meta name="description" content="test description" />
 
         <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
@@ -29,14 +29,14 @@ export default function RootLayout({
         {/* <link rel="icon" type="image/svg+xml" sizes="32x32" href="/icons/favicon.svg" />
         <link rel="icon" type="image/svg+xml" sizes="16x16" href="/icons/favicon.svg" /> */}
 
-        <meta property="og:title" content="Coding - platform" />
+        <meta property="og:title" content="Codemap" />
         <meta property="og:description" content="test description" />
         <meta property="og:image" content="/icons/logo.svg" />
         {/* <meta property="og:url" content="https://timeedu.uz" /> */}
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Coding - platform" />
+        <meta name="twitter:title" content="Codemap" />
         <meta name="twitter:description" content="test description" />
         <meta name="twitter:image" content="/path-to-your-image.jpg" />
       </head>
