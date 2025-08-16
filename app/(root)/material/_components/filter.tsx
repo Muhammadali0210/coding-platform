@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { HelpCircle, User2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import SearchInput from "./search-input";
 
 const Filter = () => {
   const materialMenu = [
@@ -16,16 +17,7 @@ const Filter = () => {
   const [active, setActive] = useState(materialMenu[0].path)
   return (
     <div className="w-[280px] h-[max-content] min-w-[280px] sticky top-[calc(8vh+24px)]">
-      <div className="flex items-center border border-gray-300 rounded-2xl px-[12px] py-[8px] w-full  bg-white">
-        <User2 className="w-[20px] h-[20px] text-[#CBD5E1]" />
-        <Input
-          type="text"
-          placeholder="Search article..."
-          className="flex-1 outline-none border-none  text-[16px] text-[#475569]"
-        />
-        <HelpCircle className="w-[20px] h-[20px] text-[#CBD5E1]" />
-      </div>
-
+      <SearchInput />
 
       {/*saidbar*/}
       <div className="mt-[40px]">

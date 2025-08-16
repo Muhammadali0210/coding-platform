@@ -13,7 +13,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="bg-white h-[8vh]  fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+    <div className="bg-white h-[8vh]  fixed top-0 left-0 right-0 z-50 border-b border-border">
       <div className="container flex justify-between items-center h-full ">
         <Link href={"/"}>
           <div className="flex items-center   ">
@@ -33,7 +33,7 @@ function Navbar() {
             {NAV_ITEMS.map((item) => {
               const isActive = pathname === item.href;
               return (
-                <Link href={item.href} key={item.href} className={`text-[17px] font-semibold ${isActive ? "text-[#4a4ddf]" : "text-black"
+                <Link href={item.href} key={item.href} className={`text-[17px] font-bold hover:text-[#4a4ddf] ${isActive ? "text-[#4a4ddf]" : "text-[#1E293B]"
                   }`}>
                   {item.label}
                 </Link>
@@ -44,7 +44,7 @@ function Navbar() {
             href={"/auth/register"}
             className=" flex items-center py-[10px] px-[24px] bg-[#F3F4FF] rounded-[12px]"
           >
-            <span className="text-[#5D5FEF] border-none">Kirish</span>
+            <span className="text-[#5D5FEF] border-none font-semibold">Kirish</span>
           </Link>
         </div>
       </div>

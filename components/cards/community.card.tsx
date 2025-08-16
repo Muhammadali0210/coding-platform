@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CommunityCard = () => {
   return (
-    <div className="border-b border-[#E4E7F5] pb-6">
+    <div className="border-b border-border pb-6">
       <div className="flex items-center justify-between gap-4">
         <div>
           {/* <div className="w-[max-content] rounded-full bg-[#e4e7f5] mb-[16px] py-[4px] px-[8px] text-[#3761E9] text-[12px] leading-[16px] font-semibold">

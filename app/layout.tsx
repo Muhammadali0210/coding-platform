@@ -24,7 +24,7 @@ export default function RootLayout({
         <title>Codemap</title>
         <meta name="description" content="test description" />
 
-        <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/brand/favicon.png" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/icons/favicon.svg" />
         {/* <link rel="icon" type="image/svg+xml" sizes="32x32" href="/icons/favicon.svg" />
         <link rel="icon" type="image/svg+xml" sizes="16x16" href="/icons/favicon.svg" /> */}
@@ -44,14 +44,13 @@ export default function RootLayout({
         className={`${nunitoSans.className} antialiased ` }
       >
        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-            
-          >
-            {children}
-          </ThemeProvider>
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

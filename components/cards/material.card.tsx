@@ -17,7 +17,7 @@ const MaterialCard = () => {
       </div>
 
       <div className="mt-5">
-        <div className="flex justify-between">
+        {/* <div className="flex justify-between">
           <div className="w-[max-content] rounded-full bg-[#e4e7f5] py-[4px] px-[8px] text-[#3761E9] text-[12px] leading-[16px] font-semibold">
             Backend
           </div>
@@ -26,9 +26,9 @@ const MaterialCard = () => {
             <Image src="/icons/like-outlined.svg" width={22} height={22} alt="like" />
             <span className="text-[14px] text-[#475569]">20 k</span>
           </div>
-        </div>
+        </div> */}
 
-        <h2 className="mt-2 text-[24px] leading-[32px] text-[#1E293B] font-bold line-clamp-1">Blog post title</h2>
+        <h2 className="text-[24px] leading-[32px] text-[#1E293B] font-bold line-clamp-1">Blog post title</h2>
 
         <div className="flex mt-2 gap-2 overflow-x-auto no-scrollbar w-full">
           {[1, 2, 3, 4].map((item, index) => (

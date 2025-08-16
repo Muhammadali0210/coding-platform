@@ -1,7 +1,9 @@
+'use client'
 import CommunityCard from "@/components/cards/community.card";
 import Filter from "./_components/filter";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
+import Pagination from "@/components/shared/pagination";
 
 
 const page = () => {
@@ -11,7 +13,7 @@ const page = () => {
         <Filter />
 
         <div style={{ width: "calc(100% - 360px - 64px)" }}>
-          <div className="border-b border-[#E4E7F5] pb-6 flex items-center justify-between w-full mb-8">
+          <div className="border-b border-border pb-6 flex items-center justify-between w-full mb-8">
             <h1 className="text-[32px] font-bold text-[#1E293B]">Community</h1>
 
             <Button className="h-[48px] px-8 flex items-center gap-2 text-white text-[16px] leading-[22px] font-bold">
@@ -24,6 +26,12 @@ const page = () => {
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((item) => (
               <CommunityCard key={item} />
             ))}
+          </div>
+
+          <div className="flex items-center justify-between mt-8">
+              <p className="text-[14px] leading-[20px] font-bold text-[#475569]">Showing 1 to 12 of 100 entries</p>
+
+              <Pagination limit={10} total={100} currentPage={1} onPageChange={() => {}} />
           </div>
         </div>
       </div>
