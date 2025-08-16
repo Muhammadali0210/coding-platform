@@ -1,4 +1,4 @@
-import { Golos_Text, Nunito_Sans } from "next/font/google";
+import { Golos_Text, Nunito_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-providers";
 
@@ -9,6 +9,11 @@ const nunitoSans = Nunito_Sans({
 
 const golosText = Golos_Text({
   variable: "--font-golos-text",
+  subsets: ["latin", "latin-ext", "cyrillic"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin", "latin-ext", "cyrillic"],
 });
 
@@ -41,7 +46,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="/path-to-your-image.jpg" />
       </head>
       <body
-        className={`${nunitoSans.className} antialiased ` }
+        className={`${inter.className} antialiased ` }
       >
        <ThemeProvider
           attribute="class"
