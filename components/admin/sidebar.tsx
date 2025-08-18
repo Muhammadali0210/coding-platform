@@ -22,19 +22,19 @@ const Sidebar = () => {
         {
           name: "Dashboard",
           href: "/admin",
-          icon: <LayoutDashboard className='w-5 h-5 text-[#A4A7AE]' strokeWidth={2.75} />,
+          icon: <LayoutDashboard className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
           iconActive: <LayoutDashboard className='w-5 h-5 text-primary' strokeWidth={2.75} />,
         },
         {
           name: "Materials",
           href: "/admin/materials",
-          icon: <FolderOpen className='w-5 h-5 text-[#A4A7AE]' strokeWidth={2.75} />,
+          icon: <FolderOpen className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
           iconActive: <FolderOpen className='w-5 h-5 text-primary' strokeWidth={2.75} />,
         },
         {
           name: "Community",
           href: "/admin/community",
-          icon: <MessageSquareCode className='w-5 h-5 text-[#A4A7AE]' strokeWidth={2.75} />,
+          icon: <MessageSquareCode className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
           iconActive: <MessageSquareCode className='w-5 h-5 text-primary' strokeWidth={2.75} />,
         },
       ],
@@ -45,19 +45,19 @@ const Sidebar = () => {
         {
           name: "Ai mentor",
           href: "/admin/ai",
-          icon: <Bot className='w-5 h-5 text-[#A4A7AE]' strokeWidth={2.75} />,
+          icon: <Bot className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
           iconActive: <Bot className='w-5 h-5 text-primary' strokeWidth={2.75} />,
         },
         {
           name: "Users",
           href: "/admin/users",
-          icon: <Users className='w-5 h-5 text-[#A4A7AE]' strokeWidth={2.75} />,
+          icon: <Users className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
           iconActive: <Users className='w-5 h-5 text-primary' strokeWidth={2.75} />,
         },
         {
           name: "Profile",
           href: "/admin/profile",
-          icon: <CircleUserRound className='w-5 h-5 text-[#A4A7AE]' strokeWidth={2.75} />,
+          icon: <CircleUserRound className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
           iconActive: <CircleUserRound className='w-5 h-5 text-primary' strokeWidth={2.75} />,
         },
       ],
@@ -71,13 +71,13 @@ const Sidebar = () => {
         {
           name: "Support",
           href: "/admin/ai",
-          icon: <MessageCircleQuestionMark className='w-5 h-5 text-[#A4A7AE]' strokeWidth={2.75} />,
+          icon: <MessageCircleQuestionMark className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
           iconActive: <MessageCircleQuestionMark className='w-5 h-5 text-primary' strokeWidth={2.75} />,
         },
         {
           name: "Settings",
           href: "/admin/settings",
-          icon: <Settings className='w-5 h-5 text-[#A4A7AE]' strokeWidth={2.75} />,
+          icon: <Settings className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
           iconActive: <Settings className='w-5 h-5 text-primary' strokeWidth={2.75} />,
         },
       ],
@@ -101,7 +101,7 @@ const Sidebar = () => {
               </div>
           )}
 
-          <div onClick={toggleSidebar} className='cursor-pointer absolute top-[25px] -right-[16px] h-[32px] border border-border w-[32px] bg-white rounded-full flex justify-center items-center z-50 transition-all duration-300'>
+          <div onClick={toggleSidebar} className='cursor-pointer absolute top-[25px] -right-[16px] h-[32px] border border-border w-[32px] bg-background rounded-full flex justify-center items-center z-50 transition-all duration-300'>
             <ChevronRight width={16} height={16} className={isOpenSidebar ? 'rotate-180' : 'rotate-0'} />
           </div>
 
@@ -117,9 +117,9 @@ const Sidebar = () => {
                   <Link href={link.href} key={linkIndex}>
                     <Button
                       className={cn(
-                        'flex justify-start gap-2 text-left',
+                        'flex justify-start gap-2 text-left hover:dark:bg-[#22262F]',
                         isOpenSidebar ? "w-full h-10 p-0 px-3" : "w-10 h-10 p-0",
-                        pathname === link.href ? "bg-accent" : "bg-transparent"
+                        pathname === link.href ? "bg-accent dark:bg-[#22262F]" : "bg-transparent"
                       )}
                       variant='ghost'
                     >

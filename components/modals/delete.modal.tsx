@@ -29,7 +29,7 @@ export function DeleteModal({
 }: DeleteModalProps) {
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="w-[426px] p-6">
+            <DialogContent className="w-[426px] p-6 bg-white dark:bg-sidebar">
                 <DialogHeader className="sr-only">
                     <DialogTitle>hidden</DialogTitle>
                     <DialogDescription>hidden</DialogDescription>
@@ -47,8 +47,8 @@ export function DeleteModal({
 
                     </div>
 
-                    <h2 className="text-[16px] leading-[24px] text-[#181D27] font-semibold">{title ? title : "Delete blog post"}</h2>
-                    <p className="text-[14px] leading-[20px] text-[#535862] mt-[2px]">{description ? description : "Are you sure you want to delete this blog post?"}</p>
+                    <h2 className="text-[16px] leading-[24px] text-h font-semibold">{title ? title : "Delete blog post"}</h2>
+                    <p className="text-[14px] leading-[20px] text-p mt-[2px]">{description ? description : "Are you sure you want to delete this blog post?"}</p>
 
                     <div className="w-full grid grid-cols-2 gap-2 mt-8">
                         <Button onClick={() => onOpenChange(false)} className="h-[48px]" variant={"outline"}>Yo'q</Button>

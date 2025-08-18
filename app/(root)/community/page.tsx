@@ -14,7 +14,7 @@ const page = () => {
 
         <div style={{ width: "calc(100% - 360px - 64px)" }}>
           <div className="border-b border-border pb-6 flex items-center justify-between w-full mb-8">
-            <h1 className="text-[32px] font-bold text-[#1E293B]">Community</h1>
+            <h1 className="text-[32px] font-bold text-h">Community</h1>
 
             <Button className="h-[48px] px-8 flex items-center gap-2 text-white text-[16px] leading-[22px] font-bold">
               Ask a Question
