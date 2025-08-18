@@ -44,9 +44,9 @@ const LoginSlider = () => {
   return (
     <Swiper
       
-      // // centeredSlides={true}
+      // centeredSlides={true}
       // effect={'fade'}
-      // // fadeEffect={{ crossFade: true }}
+      // fadeEffect={{ crossFade: true }}
       loop={true}
       autoplay={{
         delay: 2500,
@@ -56,10 +56,11 @@ const LoginSlider = () => {
       onSwiper={(swiper) => {
         swiperRef.current = swiper;
       }}
+      className="rounded-[20px]"
     >
       {testimonial.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className="relative w-full h-[95vh]">
+          <div className="relative  h-[95vh] ">
             <Image
               src={item.img}
               alt="Auth-banner"
@@ -67,7 +68,7 @@ const LoginSlider = () => {
               className="object-cover rounded-[20px]"
             />
 
-            {/* Overlay */}
+            
             <div className="absolute rounded-[20px] bottom-[32px] h-[294px] inset-x-[32px] border border-[#fff] p-[24px] bg-white/30 text-white">
               <h2 className="text-[30px] leading-[38px] font-bold text-white">
                 &ldquo;{item.quote}&rdquo;
@@ -79,8 +80,8 @@ const LoginSlider = () => {
                 </h1>
 
                 <div className="flex items-center gap-1">
-                  {[...Array(item.rating)].map((_, idx) => (
-                    <FaStar key={idx} size={20} className="text-white" />
+                  {[...Array(item.rating)].map((_, index) => (
+                    <FaStar key={index} size={20} className="text-white" />
                   ))}
                 </div>
               </div>

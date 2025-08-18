@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <div className="min-h-screen grid md:grid-cols-2 p-[24px] ">
       <LogIn/>
-      <div className="relative hidden lg:block  ">
+      <div className="relative hidden lg:block rounded-[20px]  ">
         <LoginSlider/>
       </div>
     </div>
