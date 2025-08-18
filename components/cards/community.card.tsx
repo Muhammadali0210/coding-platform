@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Tag from "../shared/tag";
 
 const CommunityCard = () => {
   return (
@@ -21,12 +22,7 @@ const CommunityCard = () => {
 
           <div className="flex mt-[8px] gap-2 overflow-x-auto no-scrollbar w-full">
             {[1, 2, 3, 4].map((item, index) => (
-              <div
-                key={index}
-                className="bg-slate-200 hover:bg-slate-200 border-none px-3 py-1 rounded-[8px]  text-[14px] text-[#475569] font-medium"
-              >
-                #react
-              </div>
+              <Tag key={index} name={"NextJs"} small={true} />
             ))}
           </div>
         </div>

@@ -1,4 +1,5 @@
 "use client"
+import SearchInput from "@/components/shared/search-input";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { HelpCircle, User2 } from "lucide-react";
@@ -16,15 +17,7 @@ const Filter = () => {
   const [active, setActive] = useState(materialMenu[0].path)
   return (
     <div className="w-[360px] h-[max-content] min-w-[360px] sticky top-[calc(8vh+24px)]">
-      <div className="flex items-center border border-gray-300 rounded-2xl px-[12px] py-[8px] w-full  bg-white">
-        <User2 className="w-[20px] h-[20px] text-[#CBD5E1]" />
-        <Input
-          type="text"
-          placeholder="Search article..."
-          className="flex-1 outline-none border-none  text-[16px] text-[#475569]"
-        />
-        <HelpCircle className="w-[20px] h-[20px] text-[#CBD5E1]" />
-      </div>
+      <SearchInput />
 
 
       {/*saidbar*/}

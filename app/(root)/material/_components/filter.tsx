@@ -1,10 +1,10 @@
 "use client"
+import SearchInput from "@/components/shared/search-input";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { HelpCircle, User2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import SearchInput from "./search-input";
 
 const Filter = () => {
   const materialMenu = [

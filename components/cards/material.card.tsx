@@ -43,8 +43,8 @@ const MaterialCard = () => {
             <Image src="/Avatar.svg" width={40} height={40} alt="avatar" className="rounded-full object-cover" />
 
             <div className="flex flex-col ml-3">
-              <h3 className="text-[14px] leading-[20px] font-bold text-[#475569]">Vermillion White</h3>
-              <span className="text-[12px] leading-[16px] text-[#475569]">2025.02.10 15:30</span>
+              <h3 className="text-[14px] leading-[20px] font-bold text-[#475569] dark:text-[#8792a0]">Vermillion White</h3>
+              <span className="text-[12px] leading-[16px] text-p">2025.02.10 15:30</span>
             </div>
           </div>
 
