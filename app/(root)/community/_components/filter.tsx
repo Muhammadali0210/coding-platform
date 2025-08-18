@@ -3,9 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { HelpCircle, User2 } from "lucide-react";
 import Link from "next/link";
+<<<<<<<< HEAD:app/(root)/community/_components/filter.tsx
 import { useState } from "react";
 
 const Filter = () => {
+========
+import  { useState } from "react";
+
+function Filter() {
+>>>>>>>> 83bb7216239c8c624b3c952c1c3a5d9556cfa6fc:app/(root)/material/_components/filter.tsx
   const materialMenu = [
     { name: "All Category", path: "all" },
     { name: "UI/UX Design", path: "uiux" },
