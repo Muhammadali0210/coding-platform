@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { Button } from "../ui/button"
 import Link from "next/link"
+import Tag from "../shared/tag"
 
 const MaterialCard = () => {
   return (
@@ -28,16 +29,11 @@ const MaterialCard = () => {
           </div>
         </div> */}
 
-        <h2 className="text-[24px] leading-[32px] text-[#1E293B] font-bold line-clamp-1">Blog post title</h2>
+        <h2 className="text-[24px] leading-[32px] text-h font-bold line-clamp-1">Blog post title</h2>
 
         <div className="flex mt-2 gap-2 overflow-x-auto no-scrollbar w-full">
           {[1, 2, 3, 4].map((item, index) => (
-            <div
-              key={index}
-              className="bg-slate-200 hover:bg-slate-200 border-none px-3 py-1 rounded-[6px]  text-[14px] text-[#475569]"
-            >
-              #react
-            </div>
+            <Tag key={index} name={"NextJs"} small={true} />
           ))}
         </div>
       </div>

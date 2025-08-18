@@ -1,19 +1,8 @@
-import { Button } from "@/components/ui/button";
+import Tag from "@/components/shared/tag";
 import Image from "next/image";
 import Link from "next/link";
 
 function MainCard() {
-  const tags = [
-    { tag: "#flutter" },
-    { tag: "#javascript" },
-    { tag: "#typescript" },
-    { tag: "#react" },
-    { tag: "#vue" },
-    { tag: "#nodejs" },
-    { tag: "#nextjs" },
-    { tag: "#tailwindcss" },
-    { tag: "#python" },
-  ];
   return (
     <div className="flex gap-8 overflow-hidden">
       <div className="relative rounded-[24px] w-[488px] h-[320px] overflow-hidden">
@@ -25,7 +14,7 @@ function MainCard() {
         />
       </div>
       <div className="overflow-hidden flex-1">
-        <div className="flex justify-between">
+        {/* <div className="flex justify-between">
           <div className="w-[max-content] rounded-full bg-[#e4e7f5] py-[4px] px-[8px] text-[#3761E9] text-[12px] leading-[16px] font-semibold">
             Backend
           </div>
@@ -33,19 +22,14 @@ function MainCard() {
             <Image src="/icons/like-outlined.svg" width={28} height={28} alt="like" />
             <span className="text-[18px] text-[#343d49]">20 k</span>
           </div>
-        </div>
-        <h1 className="mt-6 text-[30px] leading-[38px] text-[#1E293B] font-extrabold">
+        </div> */}
+        <h1 className="mt-6 text-[30px] leading-[38px] text-h font-extrabold">
           How To Be Lazy Person In The Age of AI/ML
         </h1>
 
         <div className="flex mt-2 gap-2 overflow-x-auto no-scrollbar w-full">
           {[1, 2, 3, 4].map((item, index) => (
-            <div
-              key={index}
-              className="bg-slate-200 hover:bg-slate-200 border-none px-4 py-2 rounded-[8px]  text-[14px] text-[#475569] font-medium"
-            >
-              #react
-            </div>
+            <Tag key={index} name={"NextJs"} />
           ))}
         </div>
 
