@@ -11,13 +11,13 @@ const CommunityCard = () => {
           </div> */}
 
           <Link
-            className="font-extrabold text-[20px] leading-[28px] text-[#1E293B] "
+            className="font-extrabold text-[20px] leading-[28px] text-h"
             href="/"
           >
             Senior Product Designer
           </Link>
 
-          <p className="text-[16px] leading-[20px] text-[#475569] mt-2 line-clamp-2">Maecenas accumsan lacus vel facilisis. Ullamcorper sit amet risus nullam ege. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit, voluptas odit autem magni suscipit neque dolorem, iusto vero exercitationem minus unde. Voluptate voluptatibus tenetur deserunt quisquam mollitia, molestias maxime!</p>
+          <p className="text-[16px] leading-[20px] text-p mt-2 line-clamp-2">Maecenas accumsan lacus vel facilisis. Ullamcorper sit amet risus nullam ege. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit, voluptas odit autem magni suscipit neque dolorem, iusto vero exercitationem minus unde. Voluptate voluptatibus tenetur deserunt quisquam mollitia, molestias maxime!</p>
 
           <div className="flex mt-[8px] gap-2 overflow-x-auto no-scrollbar w-full">
             {[1, 2, 3, 4].map((item, index) => (

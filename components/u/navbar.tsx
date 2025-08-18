@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ModeToggle } from "../shared/mode-toggle";
 
 function Navbar() {
   const pathname = usePathname();
@@ -13,10 +14,10 @@ function Navbar() {
   ];
 
   return (
-    <div className="bg-white h-[8vh]  fixed top-0 left-0 right-0 z-50 border-b border-border">
+    <div className="bg-background h-[8vh]  fixed top-0 left-0 right-0 z-50 border-b border-border">
       <div className="container flex justify-between items-center h-full ">
         <Link href={"/"}>
-          <div className="flex items-center   ">
+          <div className="flex items-center">
             <Image
               src="/codemap-logo.png"
               alt="Nav logo"
@@ -33,13 +34,16 @@ function Navbar() {
             {NAV_ITEMS.map((item) => {
               const isActive = pathname === item.href;
               return (
-                <Link href={item.href} key={item.href} className={`text-[17px] font-bold hover:text-[#4a4ddf] ${isActive ? "text-[#4a4ddf]" : "text-[#1E293B]"
+                <Link href={item.href} key={item.href} className={`text-[17px] font-bold hover:text-primary ${isActive ? "text-primary" : "text-inactive"
                   }`}>
                   {item.label}
                 </Link>
               );
             })}
           </div>
+          
+          <ModeToggle />
+
           <Link
             href={"/auth/register"}
             className=" flex items-center py-[10px] px-[24px] bg-[#F3F4FF] rounded-[12px]"
