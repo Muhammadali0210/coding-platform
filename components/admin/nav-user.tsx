@@ -31,7 +31,7 @@ export function NavUser({isOpenSidebar}: {isOpenSidebar: boolean}) {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
               {isOpenSidebar ? (
-                <div className="flex items-center gap-2 border border-border rounded-lg p-3 cursor-pointer">
+                <div className="flex items-center gap-2 border border-border rounded-lg p-3 cursor-pointer dark:bg-card">
                   <Avatar className="h-8 w-8 rounded-lg">
                     <AvatarImage src={'/test/Avatar.svg'} alt={"John"} />
                     <AvatarFallback className="rounded-lg">CN</AvatarFallback>

@@ -23,19 +23,19 @@ const Sidebar = () => {
           name: "Dashboard",
           href: "/admin",
           icon: <LayoutDashboard className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
-          iconActive: <LayoutDashboard className='w-5 h-5 text-primary' strokeWidth={2.75} />,
+          iconActive: <LayoutDashboard className='w-5 h-5 text-primary dark:text-white' strokeWidth={2.75} />,
         },
         {
           name: "Materials",
           href: "/admin/materials",
           icon: <FolderOpen className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
-          iconActive: <FolderOpen className='w-5 h-5 text-primary' strokeWidth={2.75} />,
+          iconActive: <FolderOpen className='w-5 h-5 text-primary dark:text-white' strokeWidth={2.75} />,
         },
         {
           name: "Community",
           href: "/admin/community",
           icon: <MessageSquareCode className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
-          iconActive: <MessageSquareCode className='w-5 h-5 text-primary' strokeWidth={2.75} />,
+          iconActive: <MessageSquareCode className='w-5 h-5 text-primary dark:text-white' strokeWidth={2.75} />,
         },
       ],
     },
@@ -46,19 +46,19 @@ const Sidebar = () => {
           name: "Ai mentor",
           href: "/admin/ai",
           icon: <Bot className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
-          iconActive: <Bot className='w-5 h-5 text-primary' strokeWidth={2.75} />,
+          iconActive: <Bot className='w-5 h-5 text-primary dark:text-white' strokeWidth={2.75} />,
         },
         {
           name: "Users",
           href: "/admin/users",
           icon: <Users className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
-          iconActive: <Users className='w-5 h-5 text-primary' strokeWidth={2.75} />,
+          iconActive: <Users className='w-5 h-5 text-primary dark:text-white' strokeWidth={2.75} />,
         },
         {
           name: "Profile",
           href: "/admin/profile",
           icon: <CircleUserRound className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
-          iconActive: <CircleUserRound className='w-5 h-5 text-primary' strokeWidth={2.75} />,
+          iconActive: <CircleUserRound className='w-5 h-5 text-primary dark:text-white' strokeWidth={2.75} />,
         },
       ],
     },
@@ -72,13 +72,13 @@ const Sidebar = () => {
           name: "Support",
           href: "/admin/ai",
           icon: <MessageCircleQuestionMark className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
-          iconActive: <MessageCircleQuestionMark className='w-5 h-5 text-primary' strokeWidth={2.75} />,
+          iconActive: <MessageCircleQuestionMark className='w-5 h-5 text-primary dark:text-white' strokeWidth={2.75} />,
         },
         {
           name: "Settings",
           href: "/admin/settings",
           icon: <Settings className='w-5 h-5 text-[#A4A7AE] dark:text-[#61656C]' strokeWidth={2.75} />,
-          iconActive: <Settings className='w-5 h-5 text-primary' strokeWidth={2.75} />,
+          iconActive: <Settings className='w-5 h-5 text-primary dark:text-white' strokeWidth={2.75} />,
         },
       ],
     },
@@ -90,7 +90,7 @@ const Sidebar = () => {
           {isOpenSidebar ? (
               <div className='p-5'>
                 <Link href={'/admin'} >
-                  <Image src="/brand/codemap-logo.svg" alt="Logo" width={180} height={50} className='' />
+                  <Image src="/brand/codemap-logo-white.svg" alt="Logo" width={180} height={50} className='' />
                 </Link>
               </div>
             ) : (

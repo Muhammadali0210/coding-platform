@@ -1,5 +1,5 @@
-import Navbar from "../../components/u/navbar";
-import Footer from "../../components/u/footer";
+import Navbar from "../../components/root/navbar";
+import Footer from "../../components/root/footer";
 export default function RootLayout({
   children,
 }: Readonly<{

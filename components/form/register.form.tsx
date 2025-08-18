@@ -1,28 +1,13 @@
+'use client';
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const LogIn = () => {
- 
+const RegisterForm = () => {
   return (
-    <div className="relative flex flex-col  ">
-      {/* Yuqoridagi logo */}
-      <div className="">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/codemap-logo.png"
-            alt="Nav logo"
-            width={200}
-            height={200}
-            className="object-cover"
-          />
-        </Link>
-      </div>
-
-      {/* O'rtadagi form */}
-      <div className="flex flex-1 items-center justify-center">
+    <div className="flex flex-1 items-center justify-center">
         <div className="p-6 rounded-2xl w-[400px]">
           <div className="flex justify-center">
             <Image
@@ -36,7 +21,7 @@ const LogIn = () => {
 
           <div className="flex flex-col items-center justify-center mt-[24px]">
             <h1 className="text-[30px] text-h font-bold leading-[38px]">
-              Welcome back
+                Create an account
             </h1>
             <p className="leading-[24px] text-p text-[16px] mt-[12px]">
               Welcome back! Please enter your details.
@@ -46,13 +31,27 @@ const LogIn = () => {
           <form className="mt-[32px]" action="">
             <Label
               className="text-sm text-p leading-[20px] font-inter"
+              htmlFor="name"
+            >
+              Name
+            </Label>
+            <Input
+              id="name"
+              className="mt-[6px] px-[14px] h-[44px] py-[10px] text-p text-[16px] leading-[24px]"
+              type="text"
+              placeholder="Name"
+            />
+
+            <Label
+              className="mt-5 text-sm text-p leading-[20px] font-inter"
               htmlFor="email"
             >
               Email
             </Label>
             <Input
+                id="email"
               className="mt-[6px] px-[14px] h-[44px] py-[10px] text-p text-[16px] leading-[24px]"
-              type="text"
+              type="email"
               placeholder="Email"
             />
 
@@ -63,6 +62,7 @@ const LogIn = () => {
               Password
             </Label>
             <Input
+                id="password"
               className="mt-[6px] px-[14px] h-[44px] py-[10px] text-p text-[16px] leading-[24px]"
               type="password"
               placeholder="Password..."
@@ -108,15 +108,7 @@ const LogIn = () => {
           </div>
         </div>
       </div>
+  )
+}
 
-      {/* Pastdagi matn */}
-      <div className="p-6">
-        <h1 className="text-[14px] leading-[20px] text-[#535862]">
-          United UI 2025
-        </h1>
-      </div>
-    </div>
-  );
-};
-
-export default LogIn;
+export default RegisterForm

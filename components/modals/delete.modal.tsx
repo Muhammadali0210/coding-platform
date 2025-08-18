@@ -37,7 +37,7 @@ export function DeleteModal({
 
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-between mb-4">
-                        <div className="w-[48px] h-[48px] rounded-full flex justify-center items-center bg-[#FFF1F2]">
+                        <div className="w-[48px] h-[48px] rounded-full flex justify-center items-center bg-[#FFF1F2] dark:bg-[#F43F5E]/10">
                             <Trash2 className="text-[#F43F5E] w-6 h-6" />
                         </div>
 
