@@ -12,8 +12,8 @@ const Header = ({data, isVisable, url}: {data: Props[], isVisable?: boolean, url
     <>
         <div className="w-full flex items-center justify-between min-h-10">
             <div className="w-full flex items-center">
-                <Link href={"/admin"} className="group" >
-                    <Home className="w-5 h-5 text-icon group-hover:text-active transition-all duration-200" />
+                <Link href={"/admin/dashboard"} className="group" >
+                    <Home className="w-5 h-5 text-inactive group-hover:text-active transition-all duration-200" />
                 </Link>
                 {data.map((item, index) => (
                     <div key={index} className="flex items-center gap-2 ml-2">
