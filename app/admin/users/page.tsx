@@ -1,8 +1,13 @@
-import React from 'react'
+
+import Users from './_components/users'
+import UserFilter from './_components/user-filter'
 
 const Page = () => {
   return (
-    <div>Users</div>
+    <div className='w-full p-8'>
+      <UserFilter/>
+      <Users/>
+    </div>
   )
 }
 
