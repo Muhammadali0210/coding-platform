@@ -10,7 +10,7 @@ const page = () => {
           src="/test/Conatact_banner.png"
           alt="Contact banner"
           width={500}
-          height={1000}
+          height={900}
           className="object-cover mx-auto"
         />
       </div>
