@@ -10,7 +10,7 @@ function Navbar() {
     { label: "Asosiy", href: "/" },
     { label: "Materiallar", href: "/material" },
     { label: "Community", href: "/community" },
-    { label: "Kontaktlar", href: "/kontaktlar" },
+    { label: "Kontaktlar", href: "/contact" },
   ];
 
   return (
