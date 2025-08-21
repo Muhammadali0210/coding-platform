@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs,  TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { ListFilter } from "lucide-react";
@@ -38,8 +38,8 @@ const Filter = () => {
 
         <Popover>
           <PopoverTrigger>
-            <Button>
-              <ListFilter className="text-white" />
+            <Button className="min-h-10 flex items-center gap-2 font-semibold">
+              <ListFilter className="w-[22px] h-[22px] text-white" />
               Filter
             </Button>
           </PopoverTrigger>
