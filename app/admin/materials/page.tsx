@@ -1,4 +1,5 @@
 'use client'
+import Filter from '@/components/admin/filter'
 import Header from '@/components/admin/header'
 import MaterialCard from '@/components/cards/material.card'
 import Pagination from '@/components/shared/pagination'
@@ -13,7 +14,7 @@ const Page = () => {
     <div className='p-8'>
       <Header data={breadckrupData} isVisable url='/admin/materials/create' />
       
-      <div>Filter</div>
+      <Filter/>
       <div className="grid grid-cols-4 gap-6 mt-[48px]">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => (
               <MaterialCard key={item} />

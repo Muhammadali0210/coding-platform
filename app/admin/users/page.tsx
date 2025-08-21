@@ -2,7 +2,9 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div>Users</div>
+    <div className='p-8'>
+      
+    </div>
   )
 }
 

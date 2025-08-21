@@ -1,3 +1,4 @@
+import Filter from "@/components/admin/filter";
 import Sidebar from "@/components/admin/sidebar";
 
 export default function AdminLayout({
