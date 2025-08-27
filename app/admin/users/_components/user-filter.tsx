@@ -11,7 +11,7 @@ const UserFilter = () => {
         <Input 
           type="text" 
           placeholder="Search users..." 
-          className="pl-8" 
+          className="pl-8 h-[44px]" 
         />
       </div>
     </div>

@@ -163,10 +163,8 @@ const Users = () => {
             ))}
           </TableBody>
         </Table>
-      </div>
-
-      <div className="flex items-center justify-between mt-8">
-        <p className="text-[14px] leading-[20px] font-bold text-[#475569]">
+        <div className="flex items-center border-t dark:border-[#22262F] border-[#E9EAEB] justify-between px-3 py-2">
+        <p className="leading-[18px] text-[14px] font-bold text-p">
           Showing 1 to 12 of 100 entries
         </p>
 
@@ -177,6 +175,9 @@ const Users = () => {
           onPageChange={() => {}}
         />
       </div>
+      </div>
+
+      
     </div>
   );
 };
