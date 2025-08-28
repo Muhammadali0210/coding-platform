@@ -27,16 +27,16 @@ const MaterialInner = () => {
       bo‘lib, u server-side rendering (SSR) va static site generation (SSG) imkoniyatlarini 
       taqdim etadi. Bu sizga tezkor va SEO uchun qulay veb-ilovalar yaratishga yordam beradi. 
       <br /><br />
-     Shuningdek, Next.js routing tizimi juda oddiy: har bir sahifa <code>pages</code> papkasida 
-joylashgan bo‘lib, avtomatik ravishda URL orqali chaqiriladi. Bundan tashqari, 
-<code>Image Optimization</code>,  va 
-<code>import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+      Shuningdek, Next.js routing tizimi juda oddiy: har bir sahifa <code>pages</code> papkasida 
+      joylashgan bo‘lib, avtomatik ravishda URL orqali chaqiriladi. Bundan tashqari, 
+      <code>Image Optimization</code>,  va 
+      <code>import { clsx, type ClassValue } from "clsx"
+      import { twMerge } from "tailwind-merge"
 
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
-}
-</code> kabi qulay funksiyalarga ega.
+      export function cn(...inputs: ClassValue[]) {
+        return twMerge(clsx(inputs))
+      }
+      </code> kabi qulay funksiyalarga ega.
 
       <br /><br />
       Agar siz zamonaviy, barqaror va kengaytiriladigan veb-dastur yaratmoqchi bo‘lsangiz, 
@@ -54,11 +54,11 @@ export function cn(...inputs: ClassValue[]) {
     <!-- Kod -->
     <h2>Kod namunasi</h2>
     <pre><code class="language-js">
-const greeting = "Hello Abubakir!";
-function sayHello(name) {
-  return \`\${greeting} Welcome, \${name}\`;
-}
-console.log(sayHello("BigBossDev"));
+      const greeting = "Hello Abubakir!";
+      function sayHello(name) {
+        return \`\${greeting} Welcome, \${name}\`;
+      }
+      console.log(sayHello("BigBossDev"));
     </code></pre>
 
     <!-- Oddiy matn -->
@@ -67,53 +67,48 @@ console.log(sayHello("BigBossDev"));
       Bu yerda esa yangi qatordan davom etadi.
     </p>
     
-
-  <div class="comment-box">
-  <div class="comment-user">
-    <img src="/Avatar.svg" alt="avatar" class="avatar" />
-    <div class="comment-info">
-      <h4 class="username">Vermillion White</h4>
-      <span class="date">2025.02.10 15:30</span>
-    </div>
-  </div>
-
-  <div class="social-link">
-    social link
-  </div>
-</div>
-
-</div>
-
-   
-
-
-
-  
     </header>
   </div>
 `;
 
   return (
-    <div className="inner-page container">
-      {parse(POST_HTML, {
-        replace: (domNode: any) => {
-          if (domNode.name === "code") {
-            const code = domNode.children[0]?.data || "";
-            if (domNode.name === "h3") {
+    <div>
+      <div className="inner-page container">
+        {parse(POST_HTML, {
+          replace: (domNode: any) => {
+            if (domNode.name === "code") {
+              const code = domNode.children[0]?.data || "";
+              if (domNode.name === "h3") {
+                return (
+                  <h3 className="inner-page">{domNode.children[0]?.data}</h3>
+                );
+              }
               return (
-                <h3 className="inner-page">{domNode.children[0]?.data}</h3>
+                <SyntaxHighlighter language="javascript" style={oneDark}>
+                  {code}
+                </SyntaxHighlighter>
               );
             }
-            return (
-              <SyntaxHighlighter language="javascript" style={oneDark}>
-                {code}
-              </SyntaxHighlighter>
-            );
-          }
-          <h1>Salom</h1>;
-          return undefined;
-        },
-      })}
+            <h1>Salom</h1>;
+            return undefined;
+          },
+        })}
+      </div>
+
+      {/* <div className="comment-box">
+        <div className="comment-user">
+          <img src="/Avatar.svg" alt="avatar" class="avatar" />
+          <div className="comment-info">
+            <h4 className="username">Vermillion White</h4>
+            <span className="date">2025.02.10 15:30</span>
+          </div>
+        </div>
+
+        <div className="social-link">
+          social link
+        </div>
+      </div> */}
+
     </div>
   );
 };
