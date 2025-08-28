@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
 :root {
   --color-dark1: #C3C4C3;
   --color-dark2: #121112;
@@ -7,6 +8,7 @@
   --color-blackish: #0A0A0A;
   --color-text: #C3C4C3;
 }
+
 .bg-dark1 {
   background-color: var(--color-dark1);
 }
@@ -80,12 +82,15 @@
 }
 
 .no-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
 
 .no-scrollbar {
-  -ms-overflow-style: none;  /* Internet Explorer, Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 
@@ -170,3 +175,143 @@
   --icon-color: #61656C;
 }
 
+
+
+
+
+.inner-page {
+
+  margin: auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.inner-page header {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+
+.inner-page h1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 48px;
+  font-weight: 700;
+
+  color: var(--color-h);
+}
+
+.inner-page h3 {
+  display: inline-block;
+  background-color: #e2e8f0;
+  font-weight: 900;
+  font-size: 15px;
+  color: #374151;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin: 0 6px 6px 0;
+  cursor: default;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.inner-page h3:hover {
+  background-color: #d1d5db;
+ 
+}
+
+.inner-page h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 1.5rem;
+  color: var(--color-h);
+}
+
+.inner-page h4 {
+  font-size: 1.5rem;
+  color: var(--color-h);
+ 
+}
+
+.inner-page p {
+  line-height: 28px;
+  font-size: 18px;
+  color: var(--color-p);
+}
+
+.inner-page img {
+  width: 100%;
+  margin: auto;
+  height: 640px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.inner-page blockquote {
+  border-left: 4px solid #2d78f0;
+  /* background-color: #f5f3f3; */
+  padding: 1rem;
+  color: var(--color-h);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 1.5rem 0;
+}
+
+.dark .inner-page blockquote {
+  color: #fff;
+  /* background-color: #232323; */
+
+
+}
+
+.inner-page .post-image {
+  margin: 1.5rem 0;
+  border-radius: 12px;
+}
+
+.inner-page .comment-box {
+  padding-top: 24px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border-top: 1.5px solid #E9EAEB;
+}
+
+.dark .inner-page .comment-box {
+  border-top: 1.5px solid #22262F;
+}
+
+.inner-page .comment-user {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* avatar va info orasida masofa */
+}
+
+.inner-page .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.inner-page .comment-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.inner-page .username {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #475569;
+}
+
+
+.inner-page .date {
+  font-size: 12px;
+  line-height: 16px;
+  color: #64748b;
+}

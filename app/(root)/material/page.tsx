@@ -5,6 +5,10 @@ import MainCard from "./_components/main-card";
 import Pagination from "@/components/shared/pagination";
 
 function page() {
+  // constants/postData.ts
+
+
+
   return (
     <div className="container">
       <div className="flex gap-[64px]">
@@ -15,7 +19,7 @@ function page() {
 
           <div className="grid grid-cols-3 gap-6 mt-[48px]">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => (
-              <MaterialCard key={item} />
+              <MaterialCard  key={item} />
             ))}
           </div>
 
