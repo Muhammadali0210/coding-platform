@@ -1,16 +1,16 @@
-import { Golos_Text, Nunito_Sans, Inter } from "next/font/google";
+ import {  Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-providers";
 
-const nunitoSans = Nunito_Sans({
-  variable: "--font-nunito-sans",
-  subsets: ["latin", "latin-ext", "cyrillic"],
-});
+// const nunitoSans = Nunito_Sans({
+//   variable: "--font-nunito-sans",
+//   subsets: ["latin", "latin-ext", "cyrillic"],
+// });
 
-const golosText = Golos_Text({
-  variable: "--font-golos-text",
-  subsets: ["latin", "latin-ext", "cyrillic"],
-});
+// const golosText = Golos_Text({
+//   variable: "--font-golos-text",
+//   subsets: ["latin", "latin-ext", "cyrillic"],
+// });
 
 const inter = Inter({
   variable: "--font-inter",
